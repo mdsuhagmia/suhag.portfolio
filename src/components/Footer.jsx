@@ -81,7 +81,7 @@ const Footer = () => {
                   className="text-gray-400 hover:text-indigo-500 transition"
                   aria-label="Twitter"
                 >
-                  <FaTwitter size={22} />
+                  <FaTwitter size={22}  />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/md-suhag-mia-00b2b9376/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BCI3qKxtMSjiQ1JgI%2FP%2B%2BfA%3D%3D"
