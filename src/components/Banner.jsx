@@ -63,7 +63,7 @@ const Banner = () => {
             <div className='pt-[140px]'>
               <ul>
                 <li><a className='text-2xl border-2 border-[#ccd3d933] inline-block py-2 px-3 rounded-xl hover:scale-110 hover:border-y-blue-400 hover:border-x-amber-500 transition-all ease-in-out duration-600 mb-2' href="https://www.facebook.com/mdsuhagmia.35573557" target='_blank'><FaFacebookF /></a></li>
-                <li><a className='text-2xl border-2 border-[#ccd3d933] inline-block py-2 px-3 rounded-xl hover:scale-110 hover:border-y-blue-400 hover:border-x-amber-500 transition-all ease-in-out duration-600 mb-2' href="#"><FaTwitter /></a></li>
+                <li><a className='text-2xl border-2 border-[#ccd3d933] inline-block py-2 px-3 rounded-xl hover:scale-110 hover:border-y-blue-400 hover:border-x-amber-500 transition-all ease-in-out duration-600 mb-2' href="https://x.com/mdsuhagmia1280" target='_blank'><FaTwitter /></a></li>
                 <li><a className='text-2xl border-2 border-[#ccd3d933] inline-block py-2 px-3 rounded-xl hover:scale-110 hover:border-y-blue-400 hover:border-x-amber-500 transition-all ease-in-out duration-600 mb-2' href="https://www.linkedin.com/in/md-suhag-mia-00b2b9376/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BCI3qKxtMSjiQ1JgI%2FP%2B%2BfA%3D%3D" target='_blank'><FaLinkedin /></a></li>
                 <li><a className='text-[26px] border-2 border-[#ccd3d933] inline-block py-2 px-3 rounded-xl hover:scale-110 hover:border-y-blue-400 hover:border-x-amber-500 transition-all ease-in-out duration-600 mb-2' href="https://github.com/mdsuhagmia" target='_blank'><FaGithub /></a></li>
               </ul>

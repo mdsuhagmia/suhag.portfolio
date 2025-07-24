@@ -75,7 +75,7 @@ const Footer = () => {
                   <FaFacebookF size={22} />
                 </a>
                 <a
-                  href="#"
+                  href="https://x.com/mdsuhagmia1280"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-indigo-500 transition"
