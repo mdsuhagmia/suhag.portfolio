@@ -50,7 +50,7 @@ const Pricing = () => {
                 <li>✅ Speed Optimization</li>
                 <li>✅ Admin Panel (CMS)</li>
               </ul>
-              <a href='#contact' target='_black' className="w-full bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 transition cursor-pointer">Choose Plan</a>
+              <button className="w-full bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 transition cursor-pointer">Choose Plan</button>
             </div>
           </div>
         </div>
