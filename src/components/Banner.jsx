@@ -51,7 +51,7 @@ const Banner = () => {
               </p>
             )}
             <div className='pb-8 md:pb-16 pt-2'>
-              <button className='text-white bg-[#63a451] text-[20px] px-[40px] py-[13px] rounded-[5px] font-semibold font-open hover:text-amber-200 hover:bg-blue-900 transition-all ease-in-out duration-500' onClick={()=>setSayHello(!sayHello)}>SAY HELLO</button>
+              <button className='text-white bg-[#63a451] text-[20px] px-[40px] py-[13px] rounded-[5px] font-semibold font-open hover:text-amber-200 hover:bg-blue-900 transition-all ease-in-out duration-500 cursor-pointer' onClick={()=>setSayHello(!sayHello)}>SAY HELLO</button>
             </div>
           </div>
           <div className='col-span-6 relative pt-0 md:pt-20'>

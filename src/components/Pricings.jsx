@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from './Container'
 
-const Pricing = () => {
+const Pricings = () => {
   return (
     <>
       <section className="py-20 bg-gray-100" id="pricing">
@@ -60,4 +60,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default Pricings

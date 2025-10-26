@@ -1,12 +1,12 @@
 import React from 'react'
 import Container from './Container'
 
-const Service = () => {
+const Services = () => {
   return (
     <section id='service' className='bg-[#ffffff] py-16 md:py-20'>
       <Container>
         <div className='text-center'>
-          <h4 className="text-[20px] md:text-[25px] font-bold font-syne text-[#180946] pb-1">Service</h4>
+          <h4 className="text-[20px] md:text-[25px] font-bold font-syne text-[#180946] pb-1 pt-8">Service</h4>
           <h2 className="text-[40px] md:text-[50px] font-bold font-syne text-[#085ea4] pb-6 md:pb-12">What I do</h2>
         </div>
 
@@ -53,4 +53,4 @@ const Service = () => {
   )
 }
 
-export default Service
+export default Services

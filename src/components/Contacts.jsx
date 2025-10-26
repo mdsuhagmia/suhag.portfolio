@@ -4,7 +4,7 @@ import emailjs from "emailjs-com";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import Container from "./Container";
 
-const Contact = () => {
+const Contacts = () => {
   const formRef = useRef();
   const {
     register,
@@ -153,4 +153,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contacts;

@@ -1,11 +1,9 @@
-// src/components/ScrollToTopButton.jsx
 import React, { useState, useEffect } from "react";
 import { FaAnglesUp } from "react-icons/fa6"; // You can change icon
 
 const ScrollToTopButton = () => {
   const [visible, setVisible] = useState(false);
 
-  // Handle scroll
   useEffect(() => {
     const handleScroll = () => {
       setVisible(window.scrollY > 70);
@@ -15,7 +13,6 @@ const ScrollToTopButton = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Smooth scroll
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };

@@ -4,7 +4,7 @@ import commers from '../assets/commers.png'
 import blog from '../assets/blog.png'
 import Container from './Container'
 
-const Portfolio = () => {
+const Portfolios = () => {
   return (
     <section id="portfolio" className="bg-gray-950 py-24 text-white">
       <Container>
@@ -60,4 +60,4 @@ const Portfolio = () => {
   )
 }
 
-export default Portfolio
+export default Portfolios

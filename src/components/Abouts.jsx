@@ -3,7 +3,7 @@ import Container from './Container'
 import ProgrammingSkills from './ProgrammingSkills'
 import { FaDownload } from 'react-icons/fa'
 
-const About = () => {
+const Abouts = () => {
   return (
     <section id='about' className='bg-[url(./assets/about.jpg)]'>
       <Container>
@@ -84,4 +84,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Abouts
