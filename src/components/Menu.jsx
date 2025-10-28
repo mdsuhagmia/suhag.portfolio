@@ -10,19 +10,20 @@ const Menu = () => {
 
   const [scrolled, setScrolled] = useState(false);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     setScrolled(window.scrollY > 90);
-  //   }
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 90);
+    }
 
-  //   window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
     
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
 
   return (
-    <nav className={`py-2 w-full z-[99999] bg-[#063346] absolute 
-        ${scrolled && "fixed bg-[#382372] shadow-md text-white transition-all ease-in-out duration-300"}`}>
+    <nav className={`py-2 w-full z-[9999] bg-[#112e42] absolute 
+        ${scrolled && "fixed top-0 bg-[#382372] shadow-md text-white transition-all ease-in-out duration-300"}`}>
       <Container>
         <div className='relative flex justify-between items-center'>
           <div className=''>
@@ -33,22 +34,24 @@ const Menu = () => {
           <div className='hidden md:block'>
             <ul className='flex items-center gap-4 lg:gap-6'>
               <li>
-                <NavLink to={"/"} className={({isActive}) => `text-md lg:text-md font-semibold font-open hover:text-[#ffffffc7] ${isActive ? "text-blue-500" : "text-white" }`}>Home</NavLink>
+                <NavLink to={"/"} className={({isActive}) => `text-md lg:text-md font-semibold font-open hover:text-[#ffffffc7] relative after:absolute after:left-0 after:-bottom-[6px] after:content-[''] after:bg-[#2b91eb] after:h-[3px] after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-500 ${isActive ? "text-[#f2ff02] " : "text-white" }`}>Home</NavLink>
               </li>
               <li>
-                <Link to={"/about"} className='text-white text-md lg:text-md font-semibold font-open hover:text-[#ffffffc7]'>About</Link>
+                <NavLink to={"/about"} className={({isActive}) => `text-md lg:text-md font-semibold font-open hover:text-[#ffffffc7] relative after:absolute after:left-0 after:-bottom-[6px] after:content-[''] after:bg-[#2b91eb] after:h-[3px] after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-500 ${isActive ? "text-[#f2ff02]" : "text-white" }`}>About</NavLink>
               </li>
               <li>
-                <Link to={"/service"} className='text-white text-md lg:text-md font-semibold font-open hover:text-[#ffffffc7]'>Service</Link>
+                <NavLink to={"/skills"} className={({isActive}) => `text-md lg:text-md font-semibold font-open hover:text-[#ffffffc7] relative after:absolute after:left-0 after:-bottom-[6px] after:content-[''] after:bg-[#2b91eb] after:h-[3px] after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-500 ${isActive ? "text-[#f2ff02]" : "text-white" }`}>Skills</NavLink>
               </li>
               <li>
-                <Link to={"/pricing"} className='text-white text-md lg:text-md font-semibold font-open hover:text-[#ffffffc7]'>Pricing</Link>
+                <NavLink to={"/service"} className={({isActive}) => `text-md lg:text-md font-semibold font-open hover:text-[#ffffffc7] relative after:absolute after:left-0 after:-bottom-[6px] after:content-[''] after:bg-[#2b91eb] after:h-[3px] after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-500 ${isActive ? "text-[#f2ff02]" : "text-white" }`}>
+                  Service
+                </NavLink>
               </li>
               <li>
-                <Link to={"/portfolio"} className='text-white text-md lg:text-md font-semibold font-open hover:text-[#ffffffc7]'>Portfolio</Link>
+                <NavLink to={"/portfolio"} className={({isActive}) => `text-md lg:text-md font-semibold font-open hover:text-[#ffffffc7] relative after:absolute after:left-0 after:-bottom-[6px] after:content-[''] after:bg-[#2b91eb] after:h-[3px] after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-500 ${isActive ? "text-[#f2ff02]" : "text-white" }`}>Portfolio</NavLink>
               </li>
               <li>
-                <Link to={"/contact"} className='text-white text-md lg:text-md font-semibold font-open hover:text-[#ffffffc7]'>Contact</Link>
+                <NavLink to={"/contact"} className={({isActive}) => `text-md lg:text-md font-semibold font-open hover:text-[#ffffffc7] relative after:absolute after:left-0 after:-bottom-[6px] after:content-[''] after:bg-[#2b91eb] after:h-[3px] after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-500 ${isActive ? "text-[#f2ff02]" : "text-white" }`}>Contact</NavLink>
                 </li>
             </ul>
           </div>

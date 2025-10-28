@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import Container from "./Container";
+import { IoIosPaperPlane } from "react-icons/io";
 
 const Contacts = () => {
   const formRef = useRef();
@@ -37,9 +38,8 @@ const Contacts = () => {
     <section className="py-20 bg-gray-100" id="contact">
       <Container>
         <div className="">
-          {/* Section Title */}
           <div className="text-center mb-12">
-            <h4 className="text-indigo-600 text-md md:text-xl font-semibold uppercase">
+            <h4 className="text-indigo-600 text-md md:text-xl font-semibold uppercase pt-8">
               Contact Me
             </h4>
             <h2 className="text-2xl md:text-5xl font-bold text-gray-800 mt-2">
@@ -48,7 +48,6 @@ const Contacts = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            {/* Left: Contact Info */}
             <div className="space-y-6 md:space-y-6">
               <div className="flex items-center space-x-6">
                 <FaMapMarkerAlt className="text-indigo-600 text-3xl md:text-4xl" />
@@ -79,14 +78,12 @@ const Contacts = () => {
               </div>
             </div>
 
-            {/* Right: Contact Form */}
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <form
                 ref={formRef}
                 onSubmit={handleSubmit(onSubmit)}
                 className="space-y-6"
               >
-                {/* Name & Email */}
                 <div className="flex flex-col md:flex-row gap-4">
                   <div className="w-full">
                     <input
@@ -120,8 +117,6 @@ const Contacts = () => {
                     )}
                   </div>
                 </div>
-
-                {/* Message */}
                 <div>
                   <textarea
                     placeholder="Start Writing Message Here"
@@ -136,13 +131,11 @@ const Contacts = () => {
                     <p className="text-sm text-red-500 mt-1">Message is required</p>
                   )}
                 </div>
-
-                {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full bg-indigo-600 text-white py-3 rounded-md hover:bg-indigo-700 transition duration-300 font-semibold"
+                  className="w-full bg-blue-500 text-white py-3 rounded-md hover:bg-blue-700 transition duration-300 font-semibold cursor-pointer hover:scale-102"
                 >
-                  SUBMIT NOW
+                  <IoIosPaperPlane className="inline-block text-xl mr-2" /> Send Message
                 </button>
               </form>
             </div>

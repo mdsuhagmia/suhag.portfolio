@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './banner.css'
 import Container from './Container'
 import banner from '../assets/banner.png'
-import { FaFacebookF, FaGithub, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import download from '../assets/download.png'
 import { TypeAnimation } from 'react-type-animation';
 

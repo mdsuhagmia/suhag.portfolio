@@ -5,7 +5,7 @@ import { FaDownload } from 'react-icons/fa'
 
 const Abouts = () => {
   return (
-    <section id='about' className='bg-[url(./assets/about.jpg)]'>
+    <section id='about' className='bg-[url(./assets/about.jpg)] pb-8'>
       <Container>
         <div className='text-center md:text-left'>
            <h2 className='text-[28px] text-[#e24c4cea] pt-[60px] md:pt-[80px] lg:pt-[100px] font-bold font-open pb-2'>About Me</h2>
@@ -58,26 +58,7 @@ const Abouts = () => {
               <h3 class="text-[16px] md:text-[15px] lg:text-[18px] text-black font-semibold font-open min-w-[120px]">Nationality:</h3>
               <p class="text-[14px] md:text-[13px] lg:text-[16px] text-[#00000090] font-semibold font-open">Bangladeshi</p>
             </div>
-
           </div>
-          
-
-          <ProgrammingSkills/>
-
-         <div className='pb-16 md:pb-0'>
-            <h2 className="text-[24px] md:text-[22px] lg:text-[28px] tracking-[6px] uppercase font-bold font-syne text-black pb-4">// Interests</h2>
-            <ul className="space-y-2 pl-5 text-[12px] md:text-[13px] lg:text-[18px] text-[#2E2E2E] font-open font-semibold leading-7 list-disc marker:text-[#4B6EFF]">
-              <li>Responsive Web Design & Mobile-First Development</li>
-              <li>Modern JavaScript Frameworks (React.js, Next.js)</li>
-              <li>Clean UI/UX Design with a Focus on Usability</li>
-              <li>Reusable Components & Design Systems</li>
-              <li>Performance Optimization & Lazy Loading</li>
-              <li>Dark Mode Interfaces & Micro Animations</li>
-              <li>Open-Source Contribution & Git Collaboration</li>
-              <li>Learning Tools like Tailwind CSS & Framer Motion</li>
-            </ul>
-          </div>
-
         </div>
       </Container>
     </section>

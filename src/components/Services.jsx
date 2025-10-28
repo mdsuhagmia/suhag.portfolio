@@ -44,11 +44,8 @@ const Services = () => {
               </div>
             </div>
          </div>
-
        </div>
-  
       </Container>
-
     </section>
   )
 }
