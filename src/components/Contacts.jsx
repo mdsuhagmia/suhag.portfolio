@@ -4,6 +4,8 @@ import emailjs from "emailjs-com";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import Container from "./Container";
 import { IoIosPaperPlane } from "react-icons/io";
+import { motion } from "framer-motion";
+import { toast } from "react-toastify";
 
 const Contacts = () => {
   const formRef = useRef();
@@ -24,31 +26,54 @@ const Contacts = () => {
       )
       .then(
         (result) => {
-          alert("Message sent successfully!");
+          toast.success("Your Message Sent Successfylly!");
           reset();
         },
         (error) => {
-          alert("Failed to send message. Please try again.");
+          toast.success("Failed to send message. Please try again.");
           console.error(error.text);
         }
       );
   };
 
+  const slideInUp = {
+    initial: { y: 50, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  };
+
   return (
-    <section className="py-20 bg-gray-100" id="contact">
+    <section className="py-20 bg-gray-200" id="contact">
       <Container>
         <div className="">
           <div className="text-center mb-12">
-            <h4 className="text-indigo-600 text-md md:text-xl font-semibold uppercase pt-8">
+            <motion.h4 
+            variants={slideInUp}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            className="text-indigo-600 text-md md:text-xl font-semibold uppercase pt-8">
               Contact Me
-            </h4>
-            <h2 className="text-2xl md:text-5xl font-bold text-gray-800 mt-2">
+            </motion.h4>
+            <motion.h2 
+            variants={slideInUp}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 0.7 }}
+            className="text-2xl md:text-5xl font-bold text-gray-800 mt-2">
               Let’s Start A New Project
-            </h2>
+            </motion.h2>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            <div className="space-y-6 md:space-y-6">
+            <motion.div 
+            variants={slideInUp}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.8 }}
+            className="space-y-6 md:space-y-6">
               <div className="flex items-center space-x-6">
                 <FaMapMarkerAlt className="text-indigo-600 text-3xl md:text-4xl" />
                 <div>
@@ -76,9 +101,15 @@ const Contacts = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
+            <motion.div 
+            variants={slideInUp}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.8 }}
+            className="bg-white p-8 rounded-2xl shadow-lg">
               <form
                 ref={formRef}
                 onSubmit={handleSubmit(onSubmit)}
@@ -102,18 +133,27 @@ const Contacts = () => {
 
                   <div className="w-full">
                     <input
-                      type="email"
-                      placeholder="Your Email"
-                      {...register("user_email", { required: true })}
-                      className={`w-full px-4 py-3 border-2 rounded-md transition duration-300 ${errors.user_email
-                          ? "border-red-500"
-                          : "border-gray-300 focus:border-indigo-600"
+                      type="text"
+                      placeholder="Your Email / Phone"
+                      {...register("user_email", {
+                        required: "Email or phone is required",
+                        validate: (value) => {
+                          const emailRegex = /^\S+@\S+\.\S+$/;
+                          const phoneRegex = /^[0-9]{10,14}$/;
+
+                          return (
+                            emailRegex.test(value) ||
+                            phoneRegex.test(value) ||
+                            "Enter a valid email or phone number"
+                          );
+                        }
+                      })}
+                      className={`w-full px-4 py-3 border-2 rounded-md transition duration-300 ${errors.user_email ? "border-red-500" : "border-gray-300 focus:border-indigo-600"
                         }`}
                     />
+
                     {errors.user_email && (
-                      <p className="text-sm text-red-500 mt-1">
-                        Valid email is required
-                      </p>
+                      <p className="text-sm text-red-500 mt-1">{errors.user_email.message}</p>
                     )}
                   </div>
                 </div>
@@ -138,7 +178,7 @@ const Contacts = () => {
                   <IoIosPaperPlane className="inline-block text-xl mr-2" /> Send Message
                 </button>
               </form>
-            </div>
+            </motion.div>
           </div>
         </div>
       </Container>

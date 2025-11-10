@@ -8,6 +8,7 @@ import Portfolio from "./pages/Portfolio"
 import Contact from "./pages/Contact"
 import Skills from "./pages/Skills"
 import CustomCursor from "./components/CustomCursor"
+import { ToastContainer } from "react-toastify"
 
 let routing = createBrowserRouter(createRoutesFromElements(
   <Route element={<RootLayout/>}>
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <>
+      <ToastContainer toastStyle={{ zIndex: 99999 }}/>
       <CustomCursor/>
       <RouterProvider router={routing}></RouterProvider>
     </>

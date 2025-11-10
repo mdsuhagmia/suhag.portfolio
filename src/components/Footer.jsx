@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
-import logo from '../assets/logo5.png'
+import logo from '../assets/logo.png'
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import Container from "./Container";
 import { Link } from "react-router-dom";
@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="">
               <h2 className="text-3xl font-bold text-indigo-500 mb-4">
                 <Link to={"/"} target="_top">
-                  <img src={logo} alt="" className="w-[200px] inline-block" />
+                  <img src={logo} alt="" className="w-[200px] brightness-0 invert-100 " />
                 </Link>
               </h2>
               <p className="text-gray-400 leading-relaxed max-w-md">

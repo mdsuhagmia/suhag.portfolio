@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <section className='bg-violet-800 py-3'>
+    <section className='bg-violet-800 py-3 hidden md:block'>
       <Container>
         <div className='flex items-center justify-between'>
           <div className="">
