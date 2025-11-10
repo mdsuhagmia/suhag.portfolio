@@ -57,7 +57,7 @@ const Footer = () => {
                 <a href="https://www.google.com/maps?q=Jamalpur,+Mymensingh,+Bangladesh" target="_blank" rel="noopener noreferrer" className="mb-2 md:text-[14px] text-gray-400 flex gap-2 items-center group-hover:text-white"><FaMapMarkerAlt className="text-gray-400 text-[17px] group-hover:text-white" /> Jamalpur, Mymensingh, Bangladesh</a>
               </div>
               <div className="group hover:underline">
-                <a href="phone:+880 1731 378743" className="mb-2 text-gray-400 flex gap-2 items-center group-hover:text-white"><FaPhoneAlt className="text-gray-400 text-md group-hover:text-white" /> +880 1731 378743</a>
+                <a href="tel:+880 1731 378743" className="mb-2 text-gray-400 flex gap-2 items-center group-hover:text-white"><FaPhoneAlt className="text-gray-400 text-md group-hover:text-white" /> +880 1731 378743</a>
               </div>
               <div className="group hover:underline">
                 <a href="mailto:mdshohagmia53200@gmail.com" className="mb-2 text-gray-400 flex gap-2 items-center group-hover:text-white"><FaEnvelope className="text-gray-400 text-md group-hover:text-white" />mdshohagmia53200@gmail.com</a>

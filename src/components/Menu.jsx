@@ -4,6 +4,11 @@ import logo from '../assets/logo.png'
 import { TiThMenu } from 'react-icons/ti'
 import { RiCloseLargeLine } from 'react-icons/ri'
 import { Link, NavLink } from 'react-router-dom'
+import { FaLocationDot } from 'react-icons/fa6'
+import { MdEmail, MdMarkEmailUnread } from "react-icons/md";
+import { FaPhone } from 'react-icons/fa'
+import { IoTime } from "react-icons/io5";
+
 
 const Menu = () => {
   let [openMenu, setOpenMenu] = useState(false)
@@ -91,7 +96,7 @@ const Menu = () => {
               onClick={() => setOpenMenu(false)}
             ></div>
           )}
-          <div ref={menuRef} className={`absolute left-0 top-0 bg-[#ffffff] shadow border-r-2 border-r-[#01ff3c] w-[80%] max-h-96 overflow-auto transition-all duration-700 ease-in-out z-[9999] ${openMenu ? 'translate-x-0' : '-translate-x-full'}`}>
+          <div ref={menuRef} className={`absolute left-0 top-0 bg-[#ffffff] shadow border-r-2 border-r-[#01ff3c] w-[80%] max-h-screen overflow-auto transition-all duration-700 ease-in-out z-[9999] ${openMenu ? 'translate-x-0' : '-translate-x-full'}`}>
             {openMenu && (
               <div className='px-4'>
                 <div className='block md:hidden text-right mt-2 mr-2'>
@@ -104,7 +109,7 @@ const Menu = () => {
                     </button>
                   </div>
                 </div>
-                <div className='pt-8 pb-6'>
+                <div className='pt-8'>
                   <ul className=''>
                     <li className='pb-2'>
                       <NavLink to={"/"} target='_top' className={({ isActive }) => `text-lg font-semibold font-open hover:text-indigo-500 ${isActive ? "text-red-500" : "text-indigo-950"}`}>Home</NavLink>
@@ -127,6 +132,27 @@ const Menu = () => {
                       <NavLink to={"/contact"} target='_top' className={({ isActive }) => `text-lg font-semibold font-open hover:text-indigo-500 ${isActive ? "text-red-500" : "text-indigo-950"}`}>Contact</NavLink>
                     </li>
                   </ul>
+                  <div className='pt-2'>
+                    <h2 className='text-lg font-bold font-syne text-violet-700 pb-2'>Contact Info</h2>
+                    <div className='pb-2'>
+                      <a href="https://www.google.com/maps?q=Jamalpur,+Mymensingh,+Bangladesh" target='_blank' className='flex items-center gap-x-2'>
+                        <FaLocationDot className='text-[14px] text-violet-950' />
+                        <p className='text-[14px] text-violet-950 font-medium font-nunito' >Jamalpur, Bangladesh</p>
+                      </a>
+                    </div>
+                    <div className='flex items-center gap-x-2 pb-2'>
+                      <MdMarkEmailUnread />
+                      <p className='text-[12px]'>mdshohagmia53200@gmail.com</p>
+                    </div>
+                    <div className='flex items-center gap-x-2'>
+                      <FaPhone />
+                      <p>01731378743</p>
+                    </div>
+                    <div className='flex items-center gap-x-2'>
+                      <IoTime />
+                      <p>Everyday, 10am - 2am</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             )}
