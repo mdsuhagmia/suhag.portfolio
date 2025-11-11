@@ -96,7 +96,7 @@ const Menu = () => {
               onClick={() => setOpenMenu(false)}
             ></div>
           )}
-          <div ref={menuRef} className={`absolute left-0 top-0 bg-[#ffffff] shadow border-r-2 border-r-[#01ff3c] w-[80%] max-h-screen overflow-auto transition-all duration-700 ease-in-out z-[9999] ${openMenu ? 'translate-x-0' : '-translate-x-full'}`}>
+          <div ref={menuRef} className={`absolute left-0 top-0 bg-[#ffffff] shadow border-r-2 border-r-[#01ff3c] w-[80%] h-screen overflow-auto transition-all duration-700 ease-in-out z-[9999] ${openMenu ? 'translate-x-0' : '-translate-x-full'}`}>
             {openMenu && (
               <div className='px-4'>
                 <div className='block md:hidden text-right mt-2 mr-2'>
