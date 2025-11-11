@@ -6,7 +6,7 @@ import { RiCloseLargeLine } from 'react-icons/ri'
 import { Link, NavLink } from 'react-router-dom'
 import { FaLocationDot } from 'react-icons/fa6'
 import { MdEmail, MdMarkEmailUnread } from "react-icons/md";
-import { FaPhone } from 'react-icons/fa'
+import { FaFacebookF, FaGithub, FaLinkedinIn, FaPhone, FaTwitter } from 'react-icons/fa'
 import { IoTime } from "react-icons/io5";
 
 
@@ -140,17 +140,61 @@ const Menu = () => {
                         <p className='text-[14px] text-violet-950 font-medium font-nunito' >Jamalpur, Bangladesh</p>
                       </a>
                     </div>
-                    <div className='flex items-center gap-x-2 pb-2'>
-                      <MdMarkEmailUnread />
-                      <p className='text-[12px]'>mdshohagmia53200@gmail.com</p>
+                    <div className='pb-2'>
+                      <a href="mailto:mdshohagmia53200@gmail.com" className='flex items-center gap-x-2'>
+                        <MdMarkEmailUnread className='text-[14px] text-violet-950' />
+                        <p className='text-[14px] text-violet-950 font-medium font-nunito'>mdshohagmia53200@gmail.com</p>
+                      </a>
                     </div>
-                    <div className='flex items-center gap-x-2'>
-                      <FaPhone />
-                      <p>01731378743</p>
+                    <div className='pb-2'>
+                      <a href="tel:+880 1731 378743tel:+880 1731 378743" className='flex items-center gap-x-2'>
+                        <FaPhone className='text-[14px] text-violet-950' />
+                        <p className='text-violet-950 font-medium font-nunito text-[14px]'>01731378743</p>
+                      </a>
                     </div>
-                    <div className='flex items-center gap-x-2'>
-                      <IoTime />
-                      <p>Everyday, 10am - 2am</p>
+                    <div className='pb-2'>
+                      <Link to={"/about"} onClick={()=>setOpenMenu(false)} className='flex items-center gap-x-2'>
+                        <IoTime className='text-[14px] text-violet-950' />
+                        <p className='text-violet-950 font-medium font-nunito text-[14px]'>Everyday, 10am - 2am</p>
+                      </Link>
+                    </div>
+                    <div className="flex space-x-6 my-6">
+                      <a
+                        href="https://www.facebook.com/mdsuhagmia.35573557"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-white transition"
+                        aria-label="Facebook"
+                      >
+                        <FaFacebookF className='bg-blue-500 p-[6px] rounded-full text-3xl text-white' />
+                      </a>
+                      <a
+                        href="https://x.com/mdsuhagmia1280"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-white transition"
+                        aria-label="Twitter"
+                      >
+                        <FaTwitter className='bg-[#1DA1F2] p-[6px] rounded-full text-3xl text-white' />
+                      </a>
+                      <a
+                        href="https://www.linkedin.com/in/md-suhag-mia-00b2b9376/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BCI3qKxtMSjiQ1JgI%2FP%2B%2BfA%3D%3D"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-white transition"
+                        aria-label="LinkedIn"
+                      >
+                        <FaLinkedinIn className='bg-[#0A66C2] p-[6px] rounded-full text-3xl text-white' />
+                      </a>
+                      <a
+                        href="https://github.com/mdsuhagmia"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-white transition"
+                        aria-label="GitHub"
+                      >
+                        <FaGithub className='bg-[#181717] p-[6px] rounded-full text-3xl text-white' />
+                      </a>
                     </div>
                   </div>
                 </div>

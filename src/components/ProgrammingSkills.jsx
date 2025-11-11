@@ -30,7 +30,7 @@ const ProgrammingSkills = () => {
         whileInView="animate"
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.8 }}
-        className="text-[20px] md:text-[20px] lg:text-[28px] tracking-[4px] md:tracking-[4px] lg:tracking-[5px] uppercase font-bold font-syne text-gray-200 pb-6">// Programming Skills</motion.h2>
+        className="text-[17px] sm:text-[20px] md:text-[20px] lg:text-[28px] tracking-[4px] md:tracking-[4px] lg:tracking-[5px] uppercase font-bold font-syne text-gray-200 pb-6">// Programming Skills</motion.h2>
 
       {skillsData.map(({ name, percent }) => (
         <div key={name} className='mr-0 md:mr-6 lg:mr-0'>
@@ -41,12 +41,12 @@ const ProgrammingSkills = () => {
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.8 }}
             className="flex justify-between mb-1">
-            <span className="text-[18px] font-semibold text-gray-400">{name}</span>
-            <span className="text-[16px] font-medium text-gray-400">{percent}%</span>
+            <span className="text-[14px] sm:text-[18px] font-semibold text-gray-400">{name}</span>
+            <span className="text-[12px] sm:text-[16px] font-medium text-gray-400">{percent}%</span>
           </motion.div>
-          <div className="w-full bg-gray-200 rounded-full h-3 mb-4">
+          <div className="w-full bg-gray-200 rounded-full h-2 sm:h-3 mb-2 sm:mb-4">
             <div
-              className="bg-[#4B6EFF] h-3 rounded-full transition-all duration-3000 ease-in-out"
+              className="bg-[#4B6EFF] h-2 sm:h-3 rounded-full transition-all duration-3000 ease-in-out"
               style={{ width: inView ? `${percent}%` : '0%' }}
             ></div>
           </div>

@@ -21,7 +21,7 @@ const Services = () => {
             whileInView="animate"
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 0.6 }}
-            className="text-[20px] md:text-[25px] font-bold font-syne text-[#180946] pb-1 pt-8">Service</motion.h4>
+            className="text-[20px] md:text-[25px] font-bold font-syne text-[#180946] pb-1 pt-0 sm:pt-8">Service</motion.h4>
           <motion.h2 
             variants={slideInUp}
             initial="initial"
@@ -40,7 +40,7 @@ const Services = () => {
               whileInView="animate"
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.7 }}
-              className="p-5 border rounded-2xl shadow-md hover:shadow-xl transition-all duration-100 hover:border-x-2 hover:border-red-700">
+              className="p-5 max-w-md mx-auto border rounded-2xl shadow-md hover:shadow-xl transition-all duration-100 hover:border-x-2 hover:border-red-700">
                 <h4 className="text-[20px] font-semibold text-black mb-2">Responsive Web Design</h4>
                 <p className="text-[#555] text-[16px]">Design clean, mobile-first websites that look great on all devices.</p>
               </motion.div>
@@ -51,7 +51,7 @@ const Services = () => {
               whileInView="animate"
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.5 }}
-              className="p-5 border rounded-2xl shadow-md hover:shadow-xl transition-all duration-100 hover:border-x-2 hover:border-red-700">
+              className="p-5 max-w-md mx-auto border rounded-2xl shadow-md hover:shadow-xl transition-all duration-100 hover:border-x-2 hover:border-red-700">
                 <h4 className="text-[20px] font-semibold text-black mb-2">Frontend Development</h4>
                 <p className="text-[#555] text-[16px]">Build interactive UIs with HTML, CSS, JavaScript, React.js and Next.js</p>
               </motion.div>
@@ -62,7 +62,7 @@ const Services = () => {
               whileInView="animate"
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.9 }}
-              className="p-5 border rounded-2xl shadow-md hover:shadow-xl transition-all duration-100 hover:border-x-2 hover:border-red-700">
+              className="p-5 max-w-md mx-auto border rounded-2xl shadow-md hover:shadow-xl transition-all duration-100 hover:border-x-2 hover:border-red-700">
                 <h4 className="text-[20px] font-semibold text-black mb-2">Tailwind & Bootstrap UI</h4>
                 <p className="text-[#555] text-[16px]">Create fast and scalable UI using Tailwind CSS and Bootstrap.</p>
               </motion.div>
@@ -73,7 +73,7 @@ const Services = () => {
               whileInView="animate"
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.4 }}
-              className="p-5 border rounded-2xl shadow-md hover:shadow-xl transition-all duration-100 hover:border-x-2 hover:border-red-700">
+              className="p-5 max-w-md mx-auto border rounded-2xl shadow-md hover:shadow-xl transition-all duration-100 hover:border-x-2 hover:border-red-700">
                 <h4 className="text-[20px] font-semibold text-black mb-2">Pixel-Perfect Design</h4>
                 <p className="text-[#555] text-[16px]">Turn design mockups into high-fidelity, pixel-perfect interfaces.</p>
               </motion.div>
@@ -84,7 +84,7 @@ const Services = () => {
               whileInView="animate"
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.8 }}
-              className="p-5 border rounded-2xl shadow-md hover:shadow-xl transition-all duration-100 hover:border-x-2 hover:border-red-700">
+              className="p-5 max-w-md mx-auto border rounded-2xl shadow-md hover:shadow-xl transition-all duration-100 hover:border-x-2 hover:border-red-700">
                 <h4 className="text-[20px] font-semibold text-black mb-2">SPA Development</h4>
                 <p className="text-[#555] text-[16px]">Develop smooth, fast single-page applications using React.js.</p>
               </motion.div>
@@ -95,7 +95,7 @@ const Services = () => {
               whileInView="animate"
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.5 }}
-              className="p-5 border rounded-2xl shadow-md hover:shadow-xl transition-all duration-100 hover:border-x-2 hover:border-red-700">
+              className="p-5 max-w-md mx-auto border rounded-2xl shadow-md hover:shadow-xl transition-all duration-100 hover:border-x-2 hover:border-red-700">
                 <h4 className="text-[20px] font-semibold text-black mb-2">Dark Mode UI</h4>
                 <p className="text-[#555] text-[16px]">Implement modern dark/light mode features for better UI.</p>
               </motion.div>

@@ -10,18 +10,18 @@ const Footer = () => {
     <footer className="bg-gray-900 text-gray-300">
       <Container>
         <div className="py-14">
-          <div className="flex justify-between">
-            <div className="">
+          <div className="md:flex justify-between">
+            <div className="pb-8 md:pb-0">
               <h2 className="text-3xl font-bold text-indigo-500 mb-4">
                 <Link to={"/"} target="_top">
                   <img src={logo} alt="" className="w-[200px] brightness-0 invert-100 " />
                 </Link>
               </h2>
-              <p className="text-gray-400 leading-relaxed max-w-md">
+              <p className="text-gray-400 leading-relaxed max-w-md md:max-w-[300px] lg:max-w-md">
                 I'm Suhag Mia, a passionate Frontend Developer focused on crafting clean, responsive, and user-friendly web experiences using modern technologies like React.js, Tailwind CSS, and JavaScript.
               </p>
             </div>
-            <div className="">
+            <div className="pb-8 md:pb-0">
               <h3 className="text-xl md:text-[16px] lg:text-xl font-semibold mb-4 text-gray-200 mt-2">Quick Links</h3>
               <ul className="space-y-[1px] text-gray-400">
                 <li>
@@ -51,7 +51,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="">
+            <div className="pb-8 md:pb-0">
               <h3 className="text-xl font-semibold mb-6 mt-2 text-gray-200">Contact Info</h3>
               <div className="group hover:underline">
                 <a href="https://www.google.com/maps?q=Jamalpur,+Mymensingh,+Bangladesh" target="_blank" rel="noopener noreferrer" className="mb-2 md:text-[14px] text-gray-400 flex gap-2 items-center group-hover:text-white"><FaMapMarkerAlt className="text-gray-400 text-[17px] group-hover:text-white" /> Jamalpur, Mymensingh, Bangladesh</a>

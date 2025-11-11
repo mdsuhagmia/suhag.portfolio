@@ -37,12 +37,22 @@ const Contacts = () => {
   };
 
   const slideInUp = {
-    initial: { y: 50, opacity: 0 },
+    initial: { y: 80, opacity: 0 },
     animate: { y: 0, opacity: 1 },
   };
 
+  const slideInRight = {
+    initial: { x: 80, opacity: 0 },
+    animate: { x: 0, opacity: 1 },
+  };
+
+  const slideInLeft = {
+    initial: { x: -80, opacity: 0 },
+    animate: { x: 0, opacity: 1 },
+  };
+
   return (
-    <section className="py-20 bg-gray-200" id="contact">
+    <section className="py-20 bg-gray-200 overflow-x-hidden" id="contact">
       <Container>
         <div className="">
           <div className="text-center mb-12">
@@ -68,7 +78,7 @@ const Contacts = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <motion.div 
-            variants={slideInUp}
+            variants={slideInLeft}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true, amount: 0.2 }}
@@ -104,11 +114,11 @@ const Contacts = () => {
             </motion.div>
 
             <motion.div 
-            variants={slideInUp}
+            variants={slideInRight}
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.8 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 1 }}
             className="bg-white p-8 rounded-2xl shadow-lg">
               <form
                 ref={formRef}
@@ -173,7 +183,7 @@ const Contacts = () => {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-blue-500 text-white py-3 rounded-md hover:bg-blue-700 transition duration-300 font-semibold cursor-pointer hover:scale-102"
+                  className="w-full bg-blue-500 text-white py-3 rounded-md hover:bg-blue-700 transition duration-500 font-semibold cursor-pointer hover:scale-102"
                 >
                   <IoIosPaperPlane className="inline-block text-xl mr-2" /> Send Message
                 </button>

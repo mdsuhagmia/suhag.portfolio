@@ -5,7 +5,7 @@ import banner from '../assets/banner.png'
 import { FaFacebookF, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import download from '../assets/download.png'
 import { TypeAnimation } from 'react-type-animation';
-import { animate, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 
 const Banner = () => {
@@ -52,12 +52,12 @@ const Banner = () => {
             >
               <img src={download} alt="" className='animate-spin [animation-duration:5s]' />
             </motion.div>
-            <h2 className='text-2xl text-[#80db66] tracking-[7px] font-semibold font-open pb-2 pt-[110px] md:pt-[140px]'>HELLO I'M</h2>
+            <h2 className='text-2xl text-[#80db66] tracking-[7px] font-semibold font-open pb-1 sm:pb-2 pt-[60px] sm:pt-[80px] md:pt-[100px] lg:pt-[140px]'>HELLO I'M</h2>
              <h1 className='text-[50px] md:text-[50px] lg:text-[78px] text-white leading-[87px] font-bold font-open pb-1 lg:pb-3'>Suhag Mia</h1>
              
             <div className='md:flex pb-2 pt-0 lg:pt-2'>
               <div className='pb-2 md:pb-0'>
-                <h3 className='text-[18px] md:text-[16px] lg:text-[23px] text-white font-semibold font-open pr-2'>A Passionate </h3>
+                <h3 className='text-[18px] md:text-[15px] lg:text-[23px] text-white font-semibold font-open pr-2'>A Passionate </h3>
               </div>
               <div className=''>
                 <TypeAnimation
@@ -71,7 +71,7 @@ const Banner = () => {
               ]}
               wrapper="span"
               speed={50}
-              className="text-[23px] md:text-[18px] lg:text-[24px] text-[#80db66] font-syne font-bold"
+              className="text-[23px] md:text-[16px] lg:text-[24px] text-[#80db66] font-syne font-bold"
               repeat={Infinity}
             />
               </div>
