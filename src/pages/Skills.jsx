@@ -29,7 +29,7 @@ const Skills = () => {
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.8 }}
         className='text-gray-300 text-sm sm:text-lg md:text-xl text-center mb-2 sm:mb-16 max-w-3xl mx-auto font-open'>
-          I specialize in modern Front-End Development, focusing on crafting high-performance, responsive user interfaces using React JS and Next JS. My passion lies in bridging the gap between design and functionality.
+          I specialize in modern MERN Stack Development, focusing on crafting high-performance, responsive user interfaces using React JS and Next JS. My passion lies in bridging the gap between design and functionality.
         </motion.p>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-16'>
           <ProgrammingSkills />
@@ -50,7 +50,7 @@ const Skills = () => {
                 transition={{ duration: 0.8 }}
               className='flex items-center gap-x-1 sm:gap-x-2'>
                 <HiBadgeCheck className='text-blue-400 text-[15px] sm:text-[19px] md:text-[21px]' />
-                <li>Responsive Web Design & Mobile-First Development</li>
+                <li>Full-Stack Web Application Development (MERN Stack)</li>
               </motion.div>
               <motion.div 
                 variants={slideInUp}
@@ -60,7 +60,7 @@ const Skills = () => {
                 transition={{ duration: 0.8 }}
                 className='flex items-center gap-x-2'>
                 <HiBadgeCheck className='text-blue-400 text-[15px] sm:text-[19px] md:text-[21px]' />
-                <li>Modern JavaScript Frameworks (React.js, Next.js)</li>
+                <li>RESTful API Design & Backend (Node.js, Express.js)</li>
               </motion.div>
               <motion.div 
                 variants={slideInUp}
@@ -70,7 +70,7 @@ const Skills = () => {
                 transition={{ duration: 0.8 }}
                 className='flex items-center gap-x-2'>
                 <HiBadgeCheck className='text-blue-400 text-[15px] sm:text-[19px] md:text-[21px]' />
-                <li>Clean UI Design with a Focus on Usability</li>
+                <li>Database Design & Optimization (MongoDB)</li>
               </motion.div>
               <motion.div 
                 variants={slideInUp}
@@ -100,7 +100,7 @@ const Skills = () => {
                 transition={{ duration: 0.8 }}
                 className='flex items-center gap-x-2'>
                 <HiBadgeCheck className='text-blue-400 text-[15px] sm:text-[19px] md:text-[21px]' />
-                <li>Dark Mode Interfaces & Micro Animations</li>
+                <li>Authentication & Authorization</li>
               </motion.div>
               <motion.div 
                 variants={slideInUp}
@@ -110,7 +110,7 @@ const Skills = () => {
                 transition={{ duration: 0.8 }}
                 className='flex items-center gap-x-2'>
                 <HiBadgeCheck className='text-blue-400 text-[15px] sm:text-[19px] md:text-[21px]' />
-                <li>Open-Source Contribution & Git Collaboration</li>
+                <li>State Management (Context API, Redux Toolkit)</li>
               </motion.div>
               <motion.div
                 variants={slideInUp}
@@ -120,7 +120,7 @@ const Skills = () => {
                 transition={{ duration: 0.8 }}
                 className='flex items-center gap-x-2'>
                 <HiBadgeCheck className='text-blue-400 text-[15px] sm:text-[19px] md:text-[21px]' />
-                <li>Learning Tools like Tailwind CSS & Framer Motion</li>
+                <li>Scalable & Secure Application Architecture</li>
               </motion.div>
             </ul>
           </div>

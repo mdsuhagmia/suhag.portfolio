@@ -68,7 +68,7 @@ const Abouts = () => {
               whileInView="animate"
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.8 }}
-              className='text-[#010102af] text-[14px] md:text-[15px] lg:text-[20px] font-medium font-syne leading-[24px] sm:leading-[30px] md:sm:leading-[28px] lg:sm:leading-[30px] pb-2 pr-0 md:pr-4 lg:pr-0'>Hi, my name is Suhag Mia. I’ve spent most of my waking hours for the last one years programing. One of my specialties is taking an idea from scratch and creating a full-fledged platform. I go beyond to produce sites with a unique, outstanding, contemporary look-and-feel.</motion.p>
+              className='text-[#010102af] text-[14px] md:text-[15px] lg:text-[20px] font-medium font-syne leading-[24px] sm:leading-[30px] md:sm:leading-[28px] lg:sm:leading-[30px] pb-2 pr-0 md:pr-4 lg:pr-0'>Hi, I'm Suhag Mia, a passionate MERN Stack Developer with experience in building modern and scalable web applications. I specialize in React.js, Node.js, Express.js, MongoDB and Next.js, turning ideas into fully functional platforms. I focus on clean code, performance, and creating responsive, user-friendly designs.</motion.p>
             <motion.div className='mt-8 mb-8 sm:pb-10 md:mb-12'
               variants={slideInBottom}
               initial="initial"
@@ -116,7 +116,18 @@ const Abouts = () => {
                 <h4 className='text-[14px] sm:text-[16px] md:text-[15px] lg:text-[18px] text-black font-semibold font-open min-w-[120px]'>:</h4>
               </div>
               <div className='w-[60%]'>
-                <p class="text-[12px] sm:text-[14px] md:text-[13px] lg:text-[16px] text-[#00000090] font-semibold font-open">Frontend Developer</p>
+                <p class="text-[12px] sm:text-[14px] md:text-[13px] lg:text-[16px] text-[#00000090] font-semibold font-open">MERN Stack Developer</p>
+              </div>
+            </div>
+            <div class="pb-3 flex items-center justify-between">
+              <div className='w-[30%]'>
+                <h3 class="text-[14px] sm:text-[16px] md:text-[15px] lg:text-[18px] text-black font-semibold font-open min-w-[120px]">Education</h3>
+              </div>
+              <div className='w-[10%]'>
+                <h4 className='text-[14px] sm:text-[16px] md:text-[15px] lg:text-[18px] text-black font-semibold font-open min-w-[120px]'>:</h4>
+              </div>
+              <div className='w-[60%]'>
+                <p class="text-[12px] sm:text-[14px] md:text-[13px] lg:text-[16px] text-[#00000090] font-semibold font-open">Bachelor's Degree (2nd Year)</p>
               </div>
             </div>
             <div class="pb-3 flex items-center justify-between">

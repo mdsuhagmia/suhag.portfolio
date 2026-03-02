@@ -1,5 +1,5 @@
 import React from 'react'
-import orevi from '../assets/orevi.png'
+import orevi from '../assets/electroselling.png'
 import hekto from '../assets/hekto.png'
 import shopex from '../assets/shopex.png'
 import Container from './Container'
@@ -47,9 +47,9 @@ const Portfolios = () => {
                   <img src={orevi} alt="" className='h-full w-full' />
                 </div>
                 <div className="py-6 px-6 md:px-2 lg:px-6">
-                  <h3 className="text-[19px] sm:text-[21px] md:text-[15px] lg:text-[21px] font-bold mb-1 group-hover:text-cyan-400 transition duration-300">Orebi E-commerce Website</h3>
-                  <p className="text-sm md:text-[12px] lg:text-sm text-gray-300 mb-3">HTML, CSS, Tailwind CSS and React JS</p>
-                  <a href="https://orebi-new.netlify.app/" target='_blank' className="text-cyan-400 hover:text-cyan-300 font-semibold transition duration-300">Live Preview →</a>
+                  <h3 className="text-[19px] sm:text-[21px] md:text-[15px] lg:text-[21px] font-bold mb-1 group-hover:text-cyan-400 transition duration-300">Electro Selling Website</h3>
+                  <p className="text-sm md:text-[12px] lg:text-sm text-gray-300 mb-3">Node.js, Express.js, MongoDB And React.js</p>
+                  <a href="https://electroselling.com" target='_blank' className="text-cyan-400 hover:text-cyan-300 font-semibold transition duration-300">Live Preview →</a>
                 </div>
               </div>
             </motion.div>

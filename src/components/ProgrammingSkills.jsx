@@ -3,12 +3,12 @@ import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 
 const skillsData = [
-  { name: 'HTML', percent: 95 },
-  { name: 'CSS', percent: 90 },
-  { name: 'Bootstrap', percent: 85 },
-  { name: 'Tailwind CSS', percent: 92 },
+  { name: 'Node.js', percent: 85 },
+  { name: 'Express.js', percent: 80 },
+  { name: 'Next.js', percent: 85 },
+  { name: 'MongoDB', percent: 78 },
   { name: 'JavaScript', percent: 80 },
-  { name: 'React.js', percent: 78 },
+  { name: 'React.js', percent: 92 },
 ];
 
 const ProgrammingSkills = () => {
